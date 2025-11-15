@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>VoyageFlow — Explore</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="page">
+
+  <div class="parallax-bg"></div>
+
+  <nav class="nav glass-nav fade-in">
+    <div class="nav-left">
+      <div class="brand">VoyageFlow</div>
+    </div>
+    <div class="nav-center">
+      <input id="searchInput" class="search" placeholder="Search destinations...">
+    </div>
+    <div class="nav-right">
+      <div id="profileName" class="profile-pill">Profile</div>
+    </div>
+  </nav>
+
+  <main class="grid-section fade-seq">
+    <div class="header-row">
+      <h1 class="title-lg">Find your next destination</h1>
+      <div class="filter-row">
+        <button class="chip active" data-cat="all">All</button>
+        <button class="chip" data-cat="europe">Europe</button>
+        <button class="chip" data-cat="asia">Asia</button>
+        <button class="chip" data-cat="americas">Americas</button>
+        <button class="chip" data-cat="middle-east">Middle East</button>
+      </div>
+    </div>
+
+    <div id="destinationsGrid" class="cards-grid"></div>
+  </main>
+
+  <div id="destModal" class="modal hidden">
+    <div class="modal-box pop">
+      <button class="close-btn" id="modalCloseBtn">×</button>
+      <img id="destImage" class="modal-img">
+      <h2 id="destName"></h2>
+      <p id="destDesc" class="muted"></p>
+      <div class="modal-actions">
+        <button id="favToggle" class="btn-secondary">Favorite</button>
+        <button id="planBtn" class="btn-primary">Plan Trip →</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/shared.js"></script>
+  <script src="assets/blog.js"></script>
+</body>
+</html>

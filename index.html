@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>VoyageFlow — Register</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="page page-center">
+
+  <div class="parallax-bg"></div>
+
+  <header class="landing-hero fade-in">
+    <div class="hero-inner fade-seq">
+      <div class="brand">VoyageFlow</div>
+      <div>
+        <h1 class="title-xl">Begin your journey</h1>
+        <p class="muted">Sign in to explore and build your custom trip</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="card glass-card rise fade-up fade-seq">
+    <form id="registerForm" autocomplete="off" onsubmit="return false;">
+
+      <div class="form-row">
+        <label for="nameInput">Full Name</label>
+        <input id="nameInput" type="text" placeholder="John Doe">
+        <div id="nameError" class="error"></div>
+      </div>
+
+      <div class="form-row">
+        <label for="emailInput">Email</label>
+        <input id="emailInput" type="email" placeholder="john@example.com">
+        <div id="emailError" class="error"></div>
+      </div>
+
+      <div class="form-row">
+        <label for="phoneInput">Phone</label>
+        <input id="phoneInput" maxlength="10" placeholder="9876543210">
+        <div id="phoneError" class="error"></div>
+      </div>
+
+      <div class="form-row">
+        <label for="pincodeInput">Pincode</label>
+        <input id="pincodeInput" maxlength="6" placeholder="110001">
+        <div id="pincodeError" class="error"></div>
+      </div>
+
+      <button id="continueBtn" class="btn-primary full">Continue →</button>
+      <button id="demoBtn" class="btn-secondary full">Use Demo Profile</button>
+
+      <div id="clock" class="muted clock"></div>
+    </form>
+  </main>
+
+  <script src="assets/shared.js"></script>
+  <script src="assets/register.js"></script>
+</body>
+</html>
